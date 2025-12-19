@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="googleaf04e76e2dffb1ce" />
+    <title>Nidhi Trivedi | Chartered Accountant & Financial Consultant</title>
+    <meta name="description" content="Nidhi Trivedi - Chartered Accountant based in Ahmedabad. Providing insights on financial compliance, taxation, and regulatory frameworks.">
+    
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/New_CA_India_Logo.png/640px-New_CA_India_Logo.png">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Nidhi Trivedi",
+      "image": "profile.jpg",
+      "telephone": "+919429966314",
+      "email": "canidhi122021@gmail.com",
+      "jobTitle": "Chartered Accountant",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "A-401, Siddhachal Appartment",
+        "addressLocality": "Paldi",
+        "addressRegion": "Ahmedabad",
+        "postalCode": "380007",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0120, 
+        "longitude": 72.5620
+      },
+      "priceRange": "₹₹"
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Lato', sans-serif; color: #334155; background-color: #ffffff; }
+        h1, h2, h3, h4, h5, .serif-font { font-family: 'Playfair Display', serif; }
+        .bg-slate-primary { background-color: #0f172a; }
+        
+        /* Preloader */
+        #preloader { position: fixed; inset: 0; background: white; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease; }
+        
+        /* Hero Background */
+        .hero-section {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Tab Styling */
+        .tab-btn { border-bottom: 3px solid transparent; transition: all 0.3s ease; cursor: pointer; opacity: 0.6; white-space: nowrap; padding-bottom: 12px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        .tab-btn:hover { opacity: 1; color: #0f172a; }
+        .tab-btn.active { border-bottom: 3px solid #0f172a; color: #0f172a; opacity: 1; }
+        .tab-content { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Floating WhatsApp */
+        .float-wa { position: fixed; bottom: 80px; right: 25px; background-color: #25d366; color: white; border-radius: 50px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100; transition: transform 0.3s; }
+        .float-wa:hover { transform: scale(1.1); }
+        @media (max-width: 768px) { .float-wa { bottom: 80px; } } 
+
+        /* Marquee */
+        .marquee-container { overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: inline-block; padding-left: 100%; animation: marquee 25s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+
+        /* Modal Logic */
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); }
+        .modal-content { background-color: #fff; margin: 5% auto; padding: 20px; border-radius: 8px; width: 90%; max-width: 700px; position: relative; max-height: 90vh; overflow-y: auto; }
+        
+        /* View Switching */
+        .view-section { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .view-section.active { display: block; }
+
+        /* FAQ Details */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+
+        /* Hover Cards */
+        .hover-card { transition: all 0.3s ease; }
+        .hover-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        html { scroll-behavior: smooth; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen pb-16 md:pb-0">
+
+    <div id="preloader">
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-spinner fa-spin text-4xl text-slate-800 mb-4"></i>
+            <span class="text-sm font-bold tracking-widest text-slate-500 uppercase">Loading Profile...</span>
+        </div>
+    </div>
+
+    <div id="view-home" class="view-section active">
+
+        <div class="bg-red-800 text-white text-xs py-2 font-bold relative z-50">
+            <div class="max-w-7xl mx-auto flex items-center px-4 md:px-6">
+                <span class="bg-red-900 px-2 py-1 rounded mr-3 shrink-0 uppercase tracking-widest text-[10px]">Updates</span>
+                <div class="marquee-container w-full">
+                    <div class="marquee-content">
+                        <span class="mr-8">📢 New Tax Regime is Default for FY 2025-26.</span>
+                        <span class="mr-8">📢 GSTR-9 Due Date: 31st December.</span>
+                        <span class="mr-8">📢 Link PAN with Aadhaar immediately.</span>
+                        <span class="mr-8">📢 Advance Tax 1st Installment Due: 15th June.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex flex-col z-50">
+                        <span class="serif-font text-xl md:text-2xl font-bold text-slate-900 tracking-tight">CA NIDHI TRIVEDI</span>
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-gray-500 font-bold">Chartered Accountant</span>
+                    </div>
+                    
+                    <div class="hidden md:flex space-x-8 text-sm font-bold text-gray-600 uppercase tracking-wide">
+                        <a href="#profile" class="hover:text-slate-900 transition">Profile</a>
+                        <a href="#knowledge-hub" class="hover:text-slate-900 transition text-blue-600">Knowledge Hub</a>
+                        <a href="#insights" class="hover:text-slate-900 transition">Insights</a>
+                        <a href="#resources" class="hover:text-slate-900 transition">Resources</a>
+                    </div>
+
+                    <a href="#contact" class="hidden md:inline-block border border-slate-800 text-slate-800 px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-slate-800 hover:text-white transition duration-300">
+                        Contact
+                    </a>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-slate-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 border-t border-gray-100 mt-4 bg-white shadow-lg rounded-b-lg absolute left-0 right-0 px-6 z-50">
+                    <a href="#profile" class="mobile-link block py-3 text-sm font-bold text-slate-700 border-b border-gray-50 hover:bg-gray-50 px-2 rounded">Profile</a>
+                    <a href="#knowledge-hub" class="mobile-link block py-3 text-sm font-bold text-slate-700 border-b border-gray-50 hover:bg-gray-50 px-2 rounded">Knowledge Hub</a>
+                    <a href="#insights" class="mobile-link block py-3 text-sm font-bold text-slate-700 border-b border-gray-50 hover:bg-gray-50 px-2 rounded">Insights</a>
+                    <a href="#resources" class="mobile-link block py-3 text-sm font-bold text-slate-700 border-b border-gray-50 hover:bg-gray-50 px-2 rounded">Resources</a>
+                    <a href="#contact" class="mobile-link block py-3 text-sm font-bold text-slate-900 uppercase bg-slate-50 mt-2 px-2 rounded">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-section text-white py-20 md:py-32">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-gray-300 mb-6">Based in Paldi, Ahmedabad</p>
+                <h1 class="text-3xl md:text-6xl font-medium leading-tight mb-4">
+                    Professional Profile & <br> <span class="italic text-gray-400">Regulatory Knowledge Hub.</span>
+                </h1>
+                
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <div class="h-[1px] w-12 bg-gray-500"></div>
+                    <p class="text-sm md:text-base text-gray-300 font-light tracking-wide italic">Dedicated to Financial Literacy & Regulatory Clarity</p>
+                    <div class="h-[1px] w-12 bg-gray-500"></div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-white text-slate-900 px-8 py-3 text-sm font-bold uppercase tracking-wide hover:bg-gray-100 transition rounded shadow-lg">Get in Touch</a>
+                    <a href="#knowledge-hub" class="border border-gray-500 text-white px-8 py-3 text-sm font-bold uppercase tracking-wide hover:border-white transition rounded">Knowledge Hub</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="profile" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-5/12 relative min-h-[300px] bg-slate-100">
+                        <img src="profile.jpg" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'" alt="CA Nidhi Trivedi" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-7/12 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="w-10 h-[2px] bg-slate-800"></span>
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Professional Summary</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-slate-900 mb-4">CA Nidhi Trivedi</h2>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            I am a qualified Chartered Accountant with a comprehensive academic and practical grasp of the Indian financial landscape. My objective is to foster compliance awareness and financial discipline among individuals and businesses.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Possessing diverse technical proficiency, I am equipped to handle end-to-end financial operations ranging from <strong>Taxation and Audit Support</strong> to <strong>Corporate Accounting and Scrutiny Proceedings</strong>.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 text-sm text-slate-800 font-bold">
+                            <div class="flex items-center"><i class="fa-solid fa-check-circle text-green-600 mr-2"></i> Chartered Accountant</div>
+                            <div class="flex items-center"><i class="fa-solid fa-check-circle text-green-600 mr-2"></i> ICAI Member</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 text-white py-12">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
+                    <div class="p-4">
+                        <i class="fa-solid fa-user-shield text-4xl text-green-500 mb-4"></i>
+                        <h3 class="text-lg font-bold uppercase tracking-wider mb-2">Confidentiality</h3>
+                        <p class="text-xs text-gray-400">Strict data protection protocols for all client financial records.</p>
+                    </div>
+                    <div class="p-4">
+                        <i class="fa-solid fa-scale-balanced text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-lg font-bold uppercase tracking-wider mb-2">Integrity</h3>
+                        <p class="text-xs text-gray-400">Unbiased, transparent, and ethical advisory services.</p>
+                    </div>
+                    <div class="p-4">
+                        <i class="fa-solid fa-clock text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-lg font-bold uppercase tracking-wider mb-2">Timeliness</h3>
+                        <p class="text-xs text-gray-400">Strict adherence to statutory deadlines to ensure zero penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencies" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-2xl md:text-3xl font-serif text-slate-900">Areas of Technical Proficiency</h2>
+                    <p class="text-gray-500 mt-2 text-sm">A detailed overview of my professional capabilities.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-file-contract text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">Direct Taxation</h3>
+                        <p class="text-sm text-gray-600">ITR Filing, Tax Planning, Capital Gains Analysis & Scrutiny Response.</p>
+                    </div>
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-boxes-stacked text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">Indirect Tax (GST)</h3>
+                        <p class="text-sm text-gray-600">Return Filing, Reconciliation, Refund Processing & E-Invoicing.</p>
+                    </div>
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-book text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">Accounting</h3>
+                        <p class="text-sm text-gray-600">End-to-End Bookkeeping, Financial Statements & Ledger Scrutiny.</p>
+                    </div>
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-hand-holding-dollar text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">TDS & Compliance</h3>
+                        <p class="text-sm text-gray-600">TDS Return Filing, 15G/15H, Lower Rate Certificates.</p>
+                    </div>
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-building text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">Business Setup</h3>
+                        <p class="text-sm text-gray-600">MSME/Udyam Reg, Shop Establishment, PAN/TAN.</p>
+                    </div>
+                    <div class="p-6 border border-gray-100 rounded hover:shadow-lg transition duration-300">
+                        <i class="fa-solid fa-magnifying-glass-chart text-3xl text-slate-800 mb-4"></i>
+                        <h3 class="text-lg font-bold mb-2 text-slate-900">Audit Support</h3>
+                        <p class="text-sm text-gray-600">Tax Audit Assistance, Statutory Audit Support & Internal Controls.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="knowledge-hub" class="py-20 bg-slate-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-serif text-slate-900">Knowledge Hub</h2>
+                    <p class="text-gray-500 mt-2">Click a module below to view detailed regulatory guides.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div onclick="switchView('view-incometax')" class="hover-card bg-white p-8 rounded shadow-sm border-b-4 border-green-500 cursor-pointer text-center">
+                        <i class="fa-solid fa-indian-rupee-sign text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Income Tax</h3>
+                        <p class="text-xs text-gray-500 mb-4">5 Heads, Slabs & Deductions</p>
+                        <span class="text-sm text-green-700 font-bold uppercase tracking-wide">View Guide →</span>
+                    </div>
+                    <div onclick="switchView('view-gst')" class="hover-card bg-white p-8 rounded shadow-sm border-b-4 border-blue-500 cursor-pointer text-center">
+                        <i class="fa-solid fa-truck-fast text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">GST</h3>
+                        <p class="text-xs text-gray-500 mb-4">Registration & Returns</p>
+                        <span class="text-sm text-blue-700 font-bold uppercase tracking-wide">View Guide →</span>
+                    </div>
+                    <div onclick="switchView('view-international')" class="hover-card bg-white p-8 rounded shadow-sm border-b-4 border-orange-500 cursor-pointer text-center">
+                        <i class="fa-solid fa-earth-americas text-4xl text-orange-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">International Tax</h3>
+                        <p class="text-xs text-gray-500 mb-4">NRI Rules & 15CA/CB</p>
+                        <span class="text-sm text-orange-700 font-bold uppercase tracking-wide">View Guide →</span>
+                    </div>
+                    <div onclick="switchView('view-audit')" class="hover-card bg-white p-8 rounded shadow-sm border-b-4 border-red-500 cursor-pointer text-center">
+                        <i class="fa-solid fa-magnifying-glass-chart text-4xl text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Audit & TDS</h3>
+                        <p class="text-xs text-gray-500 mb-4">Limits & Rate Charts</p>
+                        <span class="text-sm text-red-700 font-bold uppercase tracking-wide">View Guide →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="insights" class="py-20 bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-serif text-slate-900">Quick Reference Insights</h2>
+                    <p class="text-gray-500 mt-2">Essential compliance data at a glance.</p>
+                </div>
+
+                <div class="flex overflow-x-auto gap-8 border-b border-gray-300 mb-10 pb-1 justify-start md:justify-center no-scrollbar">
+                    <div class="tab-btn active shrink-0" onclick="openTab(event, 'tab-calendar')">Due Dates</div>
+                    <div class="tab-btn shrink-0" onclick="openTab(event, 'tab-notices')">Important Notices</div>
+                    <div class="tab-btn shrink-0" onclick="openTab(event, 'tab-capgain')">Capital Gains</div>
+                </div>
+
+                <div id="tab-calendar" class="tab-content active">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="border border-gray-200 rounded p-6 bg-white"><h4 class="font-bold text-slate-900 mb-4 border-b pb-2 text-center bg-gray-50 rounded">Monthly</h4><ul class="space-y-3 text-sm text-gray-600"><li class="flex justify-between"><span>TDS Payment</span> <strong>7th</strong></li><li class="flex justify-between"><span>GSTR-1</span> <strong>11th</strong></li><li class="flex justify-between"><span>GSTR-3B</span> <strong>20th</strong></li></ul></div>
+                        <div class="border border-gray-200 rounded p-6 bg-white"><h4 class="font-bold text-slate-900 mb-4 border-b pb-2 text-center bg-gray-50 rounded">Quarterly</h4><ul class="space-y-3 text-sm text-gray-600"><li class="flex justify-between"><span>TDS Returns</span> <strong>31st*</strong></li><li class="flex justify-between"><span>Advance Tax</span> <strong>15th*</strong></li></ul></div>
+                        <div class="border border-gray-200 rounded p-6 bg-white"><h4 class="font-bold text-slate-900 mb-4 border-b pb-2 text-center bg-gray-50 rounded">Annual</h4><ul class="space-y-3 text-sm text-gray-600"><li class="flex justify-between"><span>ITR (Non-Audit)</span> <strong class="text-red-600">31 Jul</strong></li><li class="flex justify-between"><span>Tax Audit</span> <strong>30 Sep</strong></li><li class="flex justify-between"><span>GSTR-9</span> <strong>31 Dec</strong></li></ul></div>
+                    </div>
+                </div>
+
+                <div id="tab-notices" class="tab-content">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-red-50 p-6 rounded border-l-4 border-red-500 shadow-sm">
+                            <h4 class="font-bold text-red-900 mb-3"><i class="fa-solid fa-file-invoice text-red-600 mr-2"></i>Income Tax Notices</h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li><strong>Sec 142(1):</strong> Inquiry Notice (Preliminary Investigation).</li>
+                                <li><strong>Sec 143(1):</strong> Intimation (Processing of Return).</li>
+                                <li><strong>Sec 143(2):</strong> Scrutiny Assessment (Detailed Check).</li>
+                                <li><strong>Sec 148:</strong> Reassessment (Income Escaping Assessment).</li>
+                                <li><strong>Sec 156:</strong> Notice of Demand (Tax Due).</li>
+                                <li><strong>Sec 245:</strong> Adjustment of Refund against Demand.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded border-l-4 border-blue-500 shadow-sm">
+                            <h4 class="font-bold text-blue-900 mb-3"><i class="fa-solid fa-truck-fast text-blue-600 mr-2"></i>GST Notices</h4>
+                            <ul class="text-sm text-gray-700 space-y-2">
+                                <li><strong>GSTR-3A:</strong> Notice to Non-Filers (Default in 3B/1).</li>
+                                <li><strong>ASMT-10:</strong> Scrutiny (Discrepancy in Returns).</li>
+                                <li><strong>CMP-05:</strong> Show Cause (Composition Eligibility).</li>
+                                <li><strong>REG-17:</strong> Cancellation of Registration SCN.</li>
+                                <li><strong>DRC-01:</strong> Summary of Show Cause Notice (Demand).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-capgain" class="tab-content">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 border border-gray-200 rounded shadow-sm">
+                            <h4 class="font-bold text-slate-900 mb-4">Shares & Equity MF</h4>
+                            <div class="space-y-2 text-sm text-gray-600">
+                                <div class="flex justify-between"><span>STCG (< 12 Mths)</span> <strong>20%</strong></div>
+                                <div class="flex justify-between"><span>LTCG (> 12 Mths)</span> <strong>12.5%</strong></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-200 rounded shadow-sm">
+                            <h4 class="font-bold text-slate-900 mb-4">Immovable Property</h4>
+                            <div class="space-y-2 text-sm text-gray-600">
+                                <div class="flex justify-between"><span>STCG (< 24 Mths)</span> <strong>Slab Rate</strong></div>
+                                <div class="flex justify-between"><span>LTCG (> 24 Mths)</span> <strong>12.5% (No Index)</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="py-16 bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-10"><h2 class="text-2xl font-serif text-slate-900">Smart Financial Habits</h2></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-yellow-50 rounded border-t-4 border-yellow-500"><h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-coins mr-2 text-yellow-600"></i>Cash Limits</h4><ul class="text-xs text-gray-700 space-y-1"><li>No Loan ≥ ₹20k in cash.</li><li>No Expense > ₹10k in cash.</li></ul></div>
+                    <div class="p-6 bg-blue-50 rounded border-t-4 border-blue-500"><h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-gift mr-2 text-blue-600"></i>Gifts & Rent</h4><ul class="text-xs text-gray-700 space-y-1"><li>Gifts tax-free from relatives.</li><li>Rent > ₹50k/m? Deduct 5% TDS.</li></ul></div>
+                    <div class="p-6 bg-green-50 rounded border-t-4 border-green-500"><h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-file-shield mr-2 text-green-600"></i>Documents</h4><ul class="text-xs text-gray-700 space-y-1"><li>Link PAN-Aadhaar ASAP.</li><li>Keep records for 6 years.</li></ul></div>
+                    <div class="p-6 bg-red-50 rounded border-t-4 border-red-500"><h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-eye mr-2 text-red-600"></i>High Value (SFT)</h4><ul class="text-xs text-gray-700 space-y-1"><li>Savings Cash Dep > ₹10L.</li><li>Property Purchase > ₹30L.</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="py-16 bg-white border-t border-gray-200">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-10"><h2 class="text-2xl font-serif text-slate-900">Client Utility Center</h2></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+                    <a href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp" target="_blank" class="p-4 border border-slate-200 rounded hover:bg-slate-50 transition flex items-center gap-3"><i class="fa-solid fa-credit-card text-xl text-blue-600"></i><div><span class="font-bold text-sm block text-slate-900">Pay Tax</span><span class="text-xs text-gray-500">Challan 280</span></div></a>
+                    <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verifyYourPAN" target="_blank" class="p-4 border border-slate-200 rounded hover:bg-slate-50 transition flex items-center gap-3"><i class="fa-solid fa-id-card text-xl text-blue-600"></i><div><span class="font-bold text-sm block text-slate-900">Verify PAN</span><span class="text-xs text-gray-500">Check Status</span></div></a>
+                    <a href="https://services.gst.gov.in/services/searchtp" target="_blank" class="p-4 border border-slate-200 rounded hover:bg-slate-50 transition flex items-center gap-3"><i class="fa-solid fa-magnifying-glass text-xl text-blue-600"></i><div><span class="font-bold text-sm block text-slate-900">Search GSTIN</span><span class="text-xs text-gray-500">Verify Dealer</span></div></a>
+                    
+                    <div onclick="document.getElementById('calcModal').style.display='block'" class="p-4 border border-blue-200 bg-blue-50 rounded hover:shadow-md transition flex items-center gap-3 cursor-pointer"><i class="fa-solid fa-calculator text-xl text-blue-700"></i><div><span class="font-bold text-sm block text-slate-900">Tax Estimator</span><span class="text-xs text-gray-500">New Regime FY 25-26</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white border-t border-gray-100">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-2xl font-serif text-slate-900 text-center mb-10">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <details class="group border border-gray-200 rounded-lg bg-gray-50 open:bg-white transition"><summary class="flex justify-between items-center font-medium cursor-pointer list-none p-4 text-slate-800"><span>Can I file ITR if I missed the due date?</span><span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-gray-400"></i></span></summary><div class="text-gray-600 text-sm p-4 pt-0">Yes, you can file a <strong>Belated Return</strong> u/s 139(4) by 31st December of the Assessment Year, typically with a penalty.</div></details>
+                    <details class="group border border-gray-200 rounded-lg bg-gray-50 open:bg-white transition"><summary class="flex justify-between items-center font-medium cursor-pointer list-none p-4 text-slate-800"><span>What is the difference between Financial Year (FY) and Assessment Year (AY)?</span><span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-gray-400"></i></span></summary><div class="text-gray-600 text-sm p-4 pt-0">FY is the year in which income is earned (e.g., 2024-25). AY is the following year in which that income is assessed and returns are filed (e.g., 2025-26).</div></details>
+                    <details class="group border border-gray-200 rounded-lg bg-gray-50 open:bg-white transition"><summary class="flex justify-between items-center font-medium cursor-pointer list-none p-4 text-slate-800"><span>Do I need to file ITR if my income is below ₹ 3 Lakhs?</span><span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-gray-400"></i></span></summary><div class="text-gray-600 text-sm p-4 pt-0">Mandatory filing is not required, but filing a "Nil Return" is recommended for loan processing and visa applications.</div></details>
+                    <details class="group border border-gray-200 rounded-lg bg-gray-50 open:bg-white transition"><summary class="flex justify-between items-center font-medium cursor-pointer list-none p-4 text-slate-800"><span>What documents are required for GST Registration?</span><span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-gray-400"></i></span></summary><div class="text-gray-600 text-sm p-4 pt-0">1. PAN & Aadhaar. 2. Electricity bill/Rent Agreement. 3. Bank Statement/Cancelled Cheque. 4. Photo.</div></details>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12 mb-8">
+                    <div>
+                        <h2 class="serif-font text-2xl md:text-3xl mb-4">Get in Touch</h2>
+                        <div class="space-y-4 text-sm text-gray-400">
+                            <div class="flex items-center"><i class="fa-solid fa-phone w-6"></i> <a href="tel:+919429966314" class="hover:text-white">+91 94299 66314</a></div>
+                            <div class="flex items-center"><i class="fa-solid fa-envelope w-6"></i> <a href="mailto:canidhi122021@gmail.com" class="hover:text-white">canidhi122021@gmail.com</a></div>
+                            <div class="flex items-start"><i class="fa-solid fa-location-dot w-6 mt-1"></i> <span>A-401, Siddhachal Appartment,<br>Paldi, Ahmedabad-380007</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="serif-font text-xl mb-4">Official Portals</h2>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="https://www.incometax.gov.in" target="_blank" class="hover:text-white hover:underline">Income Tax E-Filing</a></li>
+                            <li><a href="https://www.gst.gov.in" target="_blank" class="hover:text-white hover:underline">GST Common Portal</a></li>
+                            <li><a href="https://www.mca.gov.in" target="_blank" class="hover:text-white hover:underline">MCA V3 Portal</a></li>
+                            <li><a href="https://udyamregistration.gov.in" target="_blank" class="hover:text-white hover:underline">MSME Udyam</a></li>
+                        </ul>
+                    </div>
+                    <div class="rounded overflow-hidden border border-slate-700 h-40 opacity-90">
+                        <iframe src="https://www.google.com/maps?q=Siddhachal+Flats,+Paldi,+Ahmedabad&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500">
+                    <p>© 2025 CA Nidhi Trivedi. All rights reserved.</p>
+                    <div class="flex gap-4 mt-2 md:mt-0">
+                        <span onclick="document.getElementById('privacyModal').style.display='block'" class="cursor-pointer hover:text-white">Privacy Policy</span>
+                        <span>•</span>
+                        <span class="cursor-pointer hover:text-white">Disclaimer</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="view-incometax" class="view-section min-h-screen bg-white hidden">
+        <div class="bg-green-900 text-white py-8 px-6 sticky top-0 z-50 shadow-md">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <button onclick="switchView('view-home')" class="text-sm font-bold bg-white text-green-900 px-4 py-2 rounded hover:bg-green-100 transition"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Main</button>
+                <h2 class="text-xl serif-font font-bold">Income Tax Details</h2>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <h3 class="text-2xl font-serif text-slate-900 mb-6 border-b pb-2">The 5 Heads of Income</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div onclick="openModal('modal-salary')" class="hover-card bg-white border border-gray-200 p-6 rounded-lg cursor-pointer group shadow-sm"><div class="flex justify-between items-center mb-4"><i class="fa-solid fa-user-tie text-3xl text-green-600"></i><span class="text-xs font-bold text-gray-400 uppercase">Sec 15-17</span></div><h4 class="font-bold text-lg text-slate-800">1. Salary Income</h4><p class="text-xs text-gray-500 mt-2">Wages, Pension, Allowances & Perquisites.</p></div>
+                <div onclick="openModal('modal-hp')" class="hover-card bg-white border border-gray-200 p-6 rounded-lg cursor-pointer group shadow-sm"><div class="flex justify-between items-center mb-4"><i class="fa-solid fa-house-chimney text-3xl text-green-600"></i><span class="text-xs font-bold text-gray-400 uppercase">Sec 22-27</span></div><h4 class="font-bold text-lg text-slate-800">2. House Property</h4><p class="text-xs text-gray-500 mt-2">Rental Income & Home Loan Interest.</p></div>
+                <div onclick="openModal('modal-pgbp')" class="hover-card bg-white border border-gray-200 p-6 rounded-lg cursor-pointer group shadow-sm"><div class="flex justify-between items-center mb-4"><i class="fa-solid fa-briefcase text-3xl text-green-600"></i><span class="text-xs font-bold text-gray-400 uppercase">Sec 28-44</span></div><h4 class="font-bold text-lg text-slate-800">3. Business (PGBP)</h4><p class="text-xs text-gray-500 mt-2">Profits, Presumptive Tax & Audits.</p></div>
+                <div onclick="openModal('modal-cg')" class="hover-card bg-white border border-gray-200 p-6 rounded-lg cursor-pointer group shadow-sm"><div class="flex justify-between items-center mb-4"><i class="fa-solid fa-chart-line text-3xl text-green-600"></i><span class="text-xs font-bold text-gray-400 uppercase">Sec 45-55</span></div><h4 class="font-bold text-lg text-slate-800">4. Capital Gains</h4><p class="text-xs text-gray-500 mt-2">Sale of Property, Shares & Gold.</p></div>
+                <div onclick="openModal('modal-os')" class="hover-card bg-white border border-gray-200 p-6 rounded-lg cursor-pointer group shadow-sm"><div class="flex justify-between items-center mb-4"><i class="fa-solid fa-piggy-bank text-3xl text-green-600"></i><span class="text-xs font-bold text-gray-400 uppercase">Sec 56-59</span></div><h4 class="font-bold text-lg text-slate-800">5. Other Sources</h4><p class="text-xs text-gray-500 mt-2">Interest, Dividends, Gifts & Lottery.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-gst" class="view-section min-h-screen bg-white hidden">
+         <div class="bg-blue-900 text-white py-8 px-6 sticky top-0 z-50 shadow-md">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <button onclick="switchView('view-home')" class="text-sm font-bold bg-white text-blue-900 px-4 py-2 rounded hover:bg-blue-100 transition"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Main</button>
+                <h2 class="text-xl serif-font font-bold">GST Compliance Hub</h2>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <div class="space-y-6">
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"><h3 class="text-xl font-bold text-slate-900 mb-4">Registration Limits</h3><ul class="text-sm list-disc pl-5 space-y-2 text-gray-700"><li><strong>Goods Suppliers:</strong> Turnover > ₹ 40 Lakhs.</li><li><strong>Service Providers:</strong> Turnover > ₹ 20 Lakhs.</li><li><strong>Inter-State Trade:</strong> Mandatory Registration.</li></ul></div>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-sm"><h3 class="text-xl font-bold text-blue-900 mb-4">GST Audit (Reconciliation)</h3><p class="text-sm text-gray-700 mb-3">GST Audit u/s 35(5) is omitted. However, <strong>Self-Certified Reconciliation (GSTR-9C)</strong> is mandatory if Turnover > ₹ 5 Crores.</p></div>
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"><h3 class="text-xl font-bold text-slate-900 mb-4">Return Filing Calendar</h3><table class="w-full text-sm text-left"><thead class="bg-gray-50 text-gray-700"><tr><th class="p-3">Return</th><th class="p-3">Purpose</th><th class="p-3">Due Date</th></tr></thead><tbody class="text-gray-600 divide-y"><tr><td class="p-3 font-bold">GSTR-1</td><td class="p-3">Outward Supplies (Sales)</td><td class="p-3">11th of Next Month</td></tr><tr><td class="p-3 font-bold">GSTR-3B</td><td class="p-3">Summary & Tax Payment</td><td class="p-3">20th of Next Month</td></tr><tr><td class="p-3 font-bold">GSTR-9</td><td class="p-3">Annual Consolidated Return</td><td class="p-3">31st December</td></tr></tbody></table></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-international" class="view-section min-h-screen bg-white hidden">
+        <div class="bg-orange-900 text-white py-8 px-6 sticky top-0 z-50 shadow-md">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <button onclick="switchView('view-home')" class="text-sm font-bold bg-white text-orange-900 px-4 py-2 rounded hover:bg-orange-100 transition"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Main</button>
+                <h2 class="text-xl serif-font font-bold">International & NRI Taxation</h2>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 gap-8">
+                <div class="p-6 border rounded-lg bg-orange-50"><h3 class="font-bold text-lg text-orange-900 mb-3">TDS on NRI Payments (Sec 195)</h3><p class="text-sm text-gray-700 mb-3">Any payment to a Non-Resident (Interest, Capital Gains, Royalty) is subject to TDS. Rates vary as per DTAA or Income Tax Act (whichever is beneficial).</p><ul class="text-sm list-disc pl-5 text-gray-700 space-y-2"><li><strong>Interest:</strong> 20% + Cess.</li><li><strong>LTCG (Property):</strong> 20% + Cess.</li></ul></div>
+                <div class="p-6 border rounded-lg bg-white shadow-sm"><h3 class="font-bold text-lg text-slate-900 mb-3">Foreign Remittance (Form 15CA/CB)</h3><p class="text-sm text-gray-600">Banks require these forms before transferring money abroad.</p><ul class="text-sm list-disc pl-5 text-gray-600 mt-2 space-y-1"><li><strong>15CA:</strong> Self-declaration by remitter.</li><li><strong>15CB:</strong> Certificate from Chartered Accountant confirming tax payment.</li></ul></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-audit" class="view-section min-h-screen bg-white hidden">
+        <div class="bg-red-900 text-white py-8 px-6 sticky top-0 z-50 shadow-md">
+            <div class="max-w-6xl mx-auto flex justify-between items-center">
+                <button onclick="switchView('view-home')" class="text-sm font-bold bg-white text-red-900 px-4 py-2 rounded hover:bg-red-100 transition"><i class="fa-solid fa-arrow-left mr-2"></i> Back to Main</button>
+                <h2 class="text-xl serif-font font-bold">Audit & TDS Compliance</h2>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <div class="space-y-8">
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Audit Applicability</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-4 bg-red-50 rounded border-l-4 border-red-500"><h4 class="font-bold text-red-900">Tax Audit (44AB)</h4><p class="text-sm text-gray-600 mt-2"><strong>Turnover > ₹ 1 Cr</strong> (₹ 10 Cr if 95% digital).</p><p class="text-sm text-gray-600"><strong>Professionals:</strong> Gross Receipts > ₹ 50 Lakhs.</p></div>
+                        <div class="p-4 bg-blue-50 rounded border-l-4 border-blue-500"><h4 class="font-bold text-blue-900">Statutory Audit</h4><p class="text-sm text-gray-600 mt-2">Mandatory for <strong>ALL Companies</strong> (Pvt Ltd / Ltd) irrespective of turnover/profit.</p></div>
+                        <div class="p-4 bg-yellow-50 rounded border-l-4 border-yellow-500"><h4 class="font-bold text-yellow-900">Internal Audit</h4><p class="text-sm text-gray-600 mt-2">Mandatory for Listed Companies & Unlisted Cos with Turnover > ₹ 200 Cr or Loans > ₹ 100 Cr.</p></div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Detailed TDS Rates (FY 2025-26)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left border-collapse">
+                            <thead class="bg-slate-100 text-slate-700"><tr><th class="p-3 border">Sec</th><th class="p-3 border">Nature of Payment</th><th class="p-3 border">Threshold</th><th class="p-3 border">Rate</th></tr></thead>
+                            <tbody class="divide-y text-slate-600">
+                                <tr><td class="p-3 border">194C</td><td>Contractors</td><td>30k / 1L</td><td>1% / 2%</td></tr>
+                                <tr><td class="p-3 border">194I</td><td>Rent (Land/Bldg)</td><td>2.40 L</td><td>10%</td></tr>
+                                <tr><td class="p-3 border">194J</td><td>Professional Fees</td><td>30,000</td><td>10%</td></tr>
+                                <tr><td class="p-3 border">194H</td><td>Commission</td><td>15,000</td><td>5%</td></tr>
+                                <tr><td class="p-3 border">194Q</td><td>Purchase of Goods</td><td>50 Lakhs</td><td>0.1%</td></tr>
+                                <tr><td class="p-3 border">194N</td><td>Cash Withdrawal</td><td>1 Crore</td><td>2%</td></tr>
+                                <tr><td class="p-3 border">194M</td><td>Pers. Payments (Ind/HUF)</td><td>50 Lakhs</td><td>2%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 z-50 flex shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <a href="tel:+919429966314" class="flex-1 py-4 text-center border-r border-gray-200 text-slate-800 font-bold text-sm bg-gray-50 hover:bg-gray-100"><i class="fa-solid fa-phone mr-2"></i> Call Now</a>
+        <a href="https://wa.me/919429966314" class="flex-1 py-4 text-center text-white font-bold text-sm bg-green-600 hover:bg-green-700"><i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp</a>
+    </div>
+
+    <div id="cookieBanner" class="fixed bottom-0 left-0 w-full bg-slate-900 text-white p-4 z-[100] flex flex-col md:flex-row justify-between items-center shadow-lg border-t border-slate-700 hidden">
+        <p class="text-xs md:text-sm mb-3 md:mb-0 text-gray-300">We use cookies to ensure you get the best experience.</p>
+        <button onclick="acceptCookies()" class="bg-green-600 px-6 py-2 rounded text-xs font-bold uppercase hover:bg-green-700 transition">Accept</button>
+    </div>
+
+    <div id="modal-salary" class="modal"><div class="modal-content"><span onclick="closeModal('modal-salary')" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-green-800 mb-4 border-b pb-2">Income from Salary</h2><div class="text-sm text-gray-700 space-y-4"><p>Taxed on due or receipt basis.</p><div class="bg-gray-50 p-4 rounded"><h4 class="font-bold text-slate-900 mb-2">Key Deductions (Sec 16)</h4><ul class="list-disc pl-5 space-y-1"><li><strong>Standard Deduction:</strong> Flat ₹ 75,000 (New Regime).</li><li><strong>Professional Tax:</strong> Actual tax paid is deductible.</li></ul></div></div></div></div>
+    <div id="modal-hp" class="modal"><div class="modal-content"><span onclick="closeModal('modal-hp')" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-green-800 mb-4 border-b pb-2">Income from House Property</h2><div class="text-sm text-gray-700 space-y-4"><ul class="list-disc pl-5 space-y-2"><li><strong>Standard Deduction:</strong> Flat 30% of Net Annual Value.</li><li><strong>Interest on Home Loan (Sec 24b):</strong> Self Occupied: Max ₹ 2 Lakhs (Old Regime).</li></ul></div></div></div>
+    <div id="modal-pgbp" class="modal"><div class="modal-content"><span onclick="closeModal('modal-pgbp')" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-green-800 mb-4 border-b pb-2">Business & Profession</h2><div class="text-sm text-gray-700 space-y-4"><div class="bg-blue-50 p-4 rounded border border-blue-100"><h4 class="font-bold text-blue-900 mb-2">Presumptive Taxation</h4><p class="mb-2"><strong>Sec 44AD:</strong> Turnover < ₹ 3 Cr. Declare profit: 8% (Cash) / 6% (Digital).</p><p><strong>Sec 44ADA:</strong> Receipts < ₹ 75 Lakhs. Declare profit: 50%.</p></div></div></div></div>
+    <div id="modal-cg" class="modal"><div class="modal-content"><span onclick="closeModal('modal-cg')" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-green-800 mb-4 border-b pb-2">Capital Gains</h2><div class="text-sm text-gray-700 space-y-4"><table class="w-full text-left border"><tr class="bg-gray-100 font-bold"><td>Asset</td><td>Type</td><td>Tax Rate</td></tr><tr><td>Shares</td><td>STCG (< 12m)</td><td>20%</td></tr><tr><td>Shares</td><td>LTCG (> 12m)</td><td>12.5%</td></tr></table></div></div></div>
+    <div id="modal-os" class="modal"><div class="modal-content"><span onclick="closeModal('modal-os')" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-green-800 mb-4 border-b pb-2">Other Sources</h2><div class="text-sm text-gray-700 space-y-3"><ul class="list-disc pl-5"><li><strong>Dividends:</strong> Taxable at slab rates.</li><li><strong>Gifts:</strong> Taxable if > ₹ 50,000 from non-relatives.</li></ul></div></div></div>
+    
+    <div id="docModal" class="modal"><div class="modal-content relative"><span onclick="document.getElementById('docModal').style.display='none'" class="absolute top-3 right-4 text-2xl font-bold cursor-pointer text-gray-500 hover:text-gray-800">×</span><h3 class="text-lg font-bold mb-4 text-slate-900 border-b pb-2">Client Document Checklist</h3><div class="space-y-4 max-h-[60vh] overflow-y-auto pr-2"><div><h4 class="text-sm font-bold text-blue-900 mb-1">For ITR Filing</h4><ul class="text-xs text-gray-600 list-disc list-inside"><li>PAN & Aadhaar Card</li><li>Form 16</li><li>Bank Statements</li></ul></div></div></div></div>
+    <div id="calcModal" class="modal"><div class="modal-content relative bg-white p-6 rounded-lg max-w-sm mx-auto mt-20"><span onclick="document.getElementById('calcModal').style.display='none'" class="absolute top-3 right-4 text-2xl cursor-pointer hover:text-red-500">×</span><h3 class="text-lg font-bold mb-4 text-slate-900 border-b pb-2">Quick Tax Estimator (FY 25-26)</h3><div class="space-y-3"><div><label class="text-xs font-bold text-gray-600">Total Income (₹)</label><input type="number" id="incomeInput" placeholder="e.g. 1500000" class="w-full border p-2 rounded text-sm mt-1"></div><button onclick="calculateTax()" class="w-full bg-slate-900 text-white py-2 rounded text-sm font-bold mt-2">Calculate Tax</button><div id="taxResult" class="hidden mt-4 p-3 bg-green-50 border border-green-200 rounded text-center"><p class="text-xs text-gray-500">Estimated Tax Liability</p><p class="text-xl font-bold text-green-700" id="taxAmount">₹ 0</p><p class="text-[10px] text-gray-400 mt-1">*Includes Cess. Subject to deductions.</p></div></div></div></div>
+    <div id="privacyModal" class="modal"><div class="modal-content relative bg-white p-8 rounded-lg max-w-2xl mx-auto mt-20"><span onclick="document.getElementById('privacyModal').style.display='none'" class="absolute top-4 right-5 text-2xl cursor-pointer hover:text-red-500">×</span><h2 class="text-2xl font-serif text-slate-900 mb-4 border-b pb-2">Privacy Policy</h2><div class="text-sm text-gray-600 space-y-4 max-h-[60vh] overflow-y-auto"><p>We collect basic information (Name, Phone, Email) solely for communicating regarding your financial queries. Your data is never sold or shared with third parties.</p></div></div></div>
+
+    <a href="https://wa.me/919429966314" class="float-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script>
+        // SEO: Dynamic Titles
+        const pageTitles = {
+            'view-home': 'CA Nidhi Trivedi | Chartered Accountant',
+            'view-incometax': 'Income Tax Rules | CA Nidhi Trivedi',
+            'view-gst': 'GST Compliance | CA Nidhi Trivedi',
+            'view-international': 'International Tax | CA Nidhi Trivedi',
+            'view-audit': 'Audit Services | CA Nidhi Trivedi'
+        };
+
+        // PRELOADER & INITIAL LOAD
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => { preloader.style.display = 'none'; }, 500);
+            
+            // Deep Linking Check
+            const viewId = window.location.hash.substring(1);
+            if (viewId && document.getElementById(viewId)) { switchView(viewId); }
+
+            // Cookie Check
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => { document.getElementById('cookieBanner').classList.remove('hidden'); }, 2000);
+            }
+        });
+
+        // VIEW SWITCHING (SPA LOGIC)
+        function switchView(viewId) {
+            document.querySelectorAll('.view-section').forEach(el => { el.classList.remove('active'); el.style.display = 'none'; });
+            const target = document.getElementById(viewId);
+            if(target) {
+                target.style.display = 'block';
+                setTimeout(() => target.classList.add('active'), 10);
+                window.history.pushState(null, "", "#" + viewId);
+                document.title = pageTitles[viewId] || 'CA Nidhi Trivedi';
+                window.scrollTo(0,0);
+            }
+        }
+        
+        // Handle Back Button
+        window.addEventListener('popstate', () => {
+            const viewId = window.location.hash.substring(1) || 'view-home';
+            switchView(viewId);
+        });
+
+        // COOKIES
+        function acceptCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        // TABS
+        function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tab-content");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // MODALS
+        function openModal(modalId) { document.getElementById(modalId).style.display = "block"; }
+        function closeModal(modalId) { document.getElementById(modalId).style.display = "none"; }
+        window.onclick = function(event) { if (event.target.classList.contains('modal')) { event.target.style.display = "none"; } }
+
+        // MOBILE MENU
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menuLinks = document.querySelectorAll('.mobile-link');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        menuLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); }); });
+
+        // TAX CALC
+        function calculateTax() {
+            let income = parseFloat(document.getElementById('incomeInput').value);
+            let tax = 0;
+            let netIncome = income - 75000; 
+            if (netIncome <= 1200000) { tax = 0; } else {
+                if (netIncome > 400000) tax += (Math.min(netIncome, 800000) - 400000) * 0.05;
+                if (netIncome > 800000) tax += (Math.min(netIncome, 1200000) - 800000) * 0.10;
+                if (netIncome > 1200000) tax += (Math.min(netIncome, 1600000) - 1200000) * 0.15;
+                if (netIncome > 1600000) tax += (Math.min(netIncome, 2000000) - 1600000) * 0.20;
+                if (netIncome > 2000000) tax += (netIncome - 2000000) * 0.30;
+                tax = tax * 1.04;
+            }
+            document.getElementById('taxResult').classList.remove('hidden');
+            document.getElementById('taxAmount').innerText = "₹ " + Math.round(tax).toLocaleString('en-IN');
+        }
+    </script>
+
+</body>
+</html>
